@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: $light;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65%;
+
+        .logo-container {
+            img {
+                width: 80%;
+            }
+        }
+        .nav-container {
+
+            nav {
+                ul {
+                    li {
+                        display: inline-block;
+                        a {
+                            color: $gray;
+                            margin: 0 15px;
+                            text-transform: uppercase;
+                            font-size: $s-txt;
+                            font-weight: $bold;
+                            transition: all .3s;
+                        }
+                        a:hover {
+                            color: $primary;
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

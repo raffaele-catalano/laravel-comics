@@ -66,7 +66,7 @@
         </div>
 
         <div class="logo-container">
-            <img src="../assets/img/dc-logo-bg.png" alt="">
+            <img src="{{ Vite::asset('/resources/assets/img/dc-logo-bg.png')}}" alt="dc-logo">
         </div>
 
     </div>

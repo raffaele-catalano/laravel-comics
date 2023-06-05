@@ -22,3 +22,7 @@
         </div>
     </div>
 </header>
+
+<div class="jumbotron">
+    <img src="{{ Vite::asset('/resources/assets/img/jumbotron.jpg') }}" alt="jumbotron_image">
+</div>

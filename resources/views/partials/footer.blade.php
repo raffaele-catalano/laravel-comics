@@ -1,3 +1,7 @@
+@php
+    $socialItems = config('db-menu.menuSocial')
+@endphp
+
 <footer>
     <div class="container">
 
@@ -78,10 +82,13 @@
         <div class="social-container">
             <h3>follow us</h3>
             <ul>
-                <li v-for="(item, index) in menuSocial" :key="index">
-                    {{-- <a href="item.href"><img :src="item.src" :alt="item.label"></a> --}}
-                    social
+                @foreach ($socialItems as $item )
+                <li>
+                    <a href="#">
+                        <img src="{{ Vite::asset($item['src']) }}" alt="{{ $item['label'] }}">
+                    </a>
                 </li>
+                @endforeach
             </ul>
         </div>
     </div>

@@ -1,3 +1,7 @@
+@php
+    $headerMenuItems = config('db-menu.menuHeader')
+@endphp
+
 <header>
     <div class="header-wrapper">
         <div class="logo-container">
@@ -8,9 +12,11 @@
         <div class="nav-container">
             <nav>
                 <ul>
-                    <li v-for="(item, index) in menuHeader" :key="index">
-                        <a href="#">Menu</a>
+                    @foreach ($headerMenuItems as $menuItem )
+                    <li>
+                        <a href="{{ $menuItem['href'] }}">{{ $menuItem['label'] }}</a>
                     </li>
+                    @endforeach
                 </ul>
             </nav>
         </div>

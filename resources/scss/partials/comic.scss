@@ -16,9 +16,10 @@
             // border: 2px solid red;
             img {
                 width: 450px;
-                transition: all .4s;
+                transition: all .5s;
                 &:hover {
                     transform: scale(1.1);
+                    box-shadow: 0 0 10px rgba($color: $primary, $alpha: .5);
                 }
             }
         }

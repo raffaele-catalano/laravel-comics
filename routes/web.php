@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/comic/{slug}', function ($slug) {
     $comics = config('db-comics');
-    $comicFiltered = array_filter($comics, fn($comic) => $comic['slug'] === $slug);
-    $comic = $comicFiltered[array_key_first($comicFiltered)];
+    $comicSelected = array_filter($comics, fn($comic) => $comic['slug'] === $slug);
+    $comic = $comicSelected[array_key_first($comicSelected)];
     return view('comic', compact('comic'));
 })->name('comic');

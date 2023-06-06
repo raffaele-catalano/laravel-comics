@@ -1,31 +1,55 @@
-.comic-container {
+.main-wrapper {
     display: flex;
-    justify-content: center;
-    .comic-details {
+    align-items: center;
+    //debug
+    // border: 3px solid green;
+    .comic-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
+        justify-content: center;
+        width: 80%;
+        padding: 50px;
         //debug
-        border: 2px solid gold;
-        h2,
-        h4,
-        h5,
-        p {
-            padding: 10px;
+        // border: 2px solid gold;
+        .comic-thumb {
+            box-shadow: 0 0 10px rgba($color: white, $alpha: .5);
+            //debug
+            // border: 2px solid red;
+            img {
+                width: 450px;
+                transition: all .4s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
-        img {
-            width: 300px;
+        .comic-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            //debug
+            // border: 2px solid gold;
+            h2,
+            h4,
+            h5,
+            p {
+                padding: 10px 0;
+            }
+            .strong-text {
+                font-weight: bold;
+                color: $primary;
+            }
+            .description-container {
+                width: 70%;
+                margin-bottom: 50px;
+            }
         }
-        .description-container {
-            width: 70%;
+        .btn {
+            padding: 10px 15px;
+            border-radius: 15px;
+            background-color: $primary;
+            margin-bottom: 15px;
+            color: white;
         }
-    }
-    .btn {
-        padding: 10px 15px;
-        border-radius: 15px;
-        background-color: $primary;
-        margin-bottom: 15px;
-        color: white;
     }
 }

@@ -1,8 +1,10 @@
 // @import '~bootstrap/scss/bootstrap';
+@import '@fontsource/roboto';
 
 @import 'partials/_variables.scss';
 @import 'partials/_general.scss';
 @import 'partials/_mixin.scss';
-@import 'partials/_typo.scss';
 @import 'partials/header.scss';
 @import 'partials/footer.scss';
+@import 'partials/main.scss';
+@import 'partials/_typo.scss';

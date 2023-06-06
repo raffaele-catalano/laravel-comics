@@ -1,0 +1,31 @@
+.comic-container {
+    display: flex;
+    justify-content: center;
+    .comic-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        //debug
+        border: 2px solid gold;
+        h2,
+        h4,
+        h5,
+        p {
+            padding: 10px;
+        }
+        img {
+            width: 300px;
+        }
+        .description-container {
+            width: 70%;
+        }
+    }
+    .btn {
+        padding: 10px 15px;
+        border-radius: 15px;
+        background-color: $primary;
+        margin-bottom: 15px;
+        color: white;
+    }
+}

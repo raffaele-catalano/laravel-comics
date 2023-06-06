@@ -6,7 +6,7 @@
     <div class="header-wrapper">
         <div class="logo-container">
             {{-- <img src="{{Vite::asset('/resources/assets/img/dc-logo.png')}}" alt="dc-logo"> --}}
-            <img src="img/dc-logo.png" alt="dc-logo">
+            <img src="/img/dc-logo.png" alt="dc-logo">
 
         </div>
         <div class="nav-container">
